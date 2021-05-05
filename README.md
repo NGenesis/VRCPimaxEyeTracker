@@ -26,3 +26,33 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | LeftEyeY | Left | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
 | RightEyeY | Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
 | EyesY | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+
+### Blend Shapes
+| Name | Description |
+| --- | --- |
+| Right Eye Blink | |
+| Left Eye Blink | |
+| Eyes Look Forward | |
+| Right Eye Look Right Up | |
+| Right Eye Look Up | |
+| Right Eye Look Left Up | |
+| Right Eye Look Right | |
+| Right Eye Look Left | |
+| Right Eye Look Right Down | |
+| Right Eye Look Down | |
+| Right Eye Look Left Down | |
+| Left Eye Look Right Up | |
+| Left Eye Look Up | |
+| Left Eye Look Left Up | |
+| Left Eye Look Right | |
+| Left Eye Look Left | |
+| Left Eye Look Right Down | |
+| Left Eye Look Down | |
+| Left Eye Look Left Down | |
+
+
+
+
+
+
+![Eye Blend Shapes](eye_blendshapes.png)
