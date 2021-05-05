@@ -49,9 +49,14 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | Left Eye Look Down | ![Left Eye Look Down](docs/blendshapes/Left%20Eye%20Look%20Down.png) |
 | Left Eye Look Left Down | ![Left Eye Look Left Down](docs/blendshapes/Left%20Eye%20Look%20Left%20Down.png) |
 
+## Avatar Masks
+
+Create avatar masks `Left Eye` and `Right Eye` using each eye's respective eye bones that will be assigned to the layers below.
+
 ## Layers
 
 ### Use Eye Tracker
+
 ![Animator](docs/layers/layer_useeyetracker.png)
 
 #### Layer Settings
@@ -89,28 +94,52 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | Any State | Eye Tracker Enabled | UseEyeTracker: true |
 
 ### Left Eye Blink
+
 ![Animator](docs/layers/layer_lefteyeblink.png)
 
-Set `Weight` to `1`.
-Set `Mask` to `Left Eye`.
+#### Layer Settings
+
+| Property | Value |
+| --- | --- |
+| Weight | 1 |
+| Mask | Left Eye |
+| Blending | Override |
 
 ### Right Eye Blink
+
 ![Animator](docs/layers/layer_righteyeblink.png)
 
-Set `Weight` to `1`.
-Set `Mask` to `Right Eye`.
+#### Layer Settings
+
+| Property | Value |
+| --- | --- |
+| Weight | 1 |
+| Mask | Right Eye |
+| Blending | Override |
 
 ### Left Eye Movement
+
 ![Animator](docs/layers/layer_lefteyemovement.png)
 
-Set `Weight` to `1`.
-Set `Mask` to `Left Eye`.
+#### Layer Settings
+
+| Property | Value |
+| --- | --- |
+| Weight | 1 |
+| Mask | Left Eye |
+| Blending | Override |
 
 ### Right Eye Movement
+
 ![Animator](docs/layers/layer_righteyemovement.png)
 
-Set `Weight` to `1`.
-Set `Mask` to `Right Eye`.
+#### Layer Settings
+
+| Property | Value |
+| --- | --- |
+| Weight | 1 |
+| Mask | Right Eye |
+| Blending | Override |
 
 
 
