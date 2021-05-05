@@ -9,7 +9,7 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 1. Copy `PimaxEyeTrackerNative.dll` and `aSeeVRClient.dll` to your VRChat installation folder, in the same location where `VRChat.exe` is located.
 1. Copy `VRCPimaxEyeTracker.dll`to your Mods folder.
 
-## Avatar Setup
+## Avatar Creation
 
 ### Expression Parameters
 | Name | Eye | Type | Value | Description |
