@@ -2,7 +2,7 @@
 VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for Pimax headsets.
 
 ## Installation
-> **:warning: Ensure that aSeeVR Runtime is installed and running, and that your Droolon Pi1 is correctly installed and calibrated before using the plugin.**
+> **:warning: Ensure that aSeeVR Runtime (typically installed via PiTool) is installed and running, and that your Droolon Pi1 is correctly installed and calibrated before using the plugin.**
 
 > **:warning: If VRChat hangs when launching with the plugin installed, it may be nessecary to run VRChat as Administrator.  To do this, right click `VRChat.exe`, navigate to `Properties` > `Compatibility` tab and check `Run this program as an administrator`.**
 
