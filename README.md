@@ -1,2 +1,2 @@
 # VRCPimaxEyeTracker
-VRChat plugin supports avatar eye tracking using the DroolonPi1 eye tracker for Pimax headsets.
+VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for Pimax headsets.
