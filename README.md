@@ -26,6 +26,15 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | EyesX | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
 | EyesY | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
 
+The recommended setup that will be used in this guide uses the following expression parameters:
+
+- UseEyeTracker
+- LeftEyeBlink
+- RightEyeBlink
+- LeftEyeX
+- RightEyeX
+- EyesY
+
 ## Blend Shapes
 | Name | Preview |
 | --- | --- |
@@ -105,6 +114,23 @@ Create avatar masks `Left Eye` and `Right Eye` using each eye's respective eye b
 | Mask | Left Eye |
 | Blending | Override |
 
+#### States
+
+- **Eye Tracker Disabled**
+  - Set `Motion` to `None`
+- **Left Eye Open**
+  - Set `Motion` to `Left Eye Open`
+- **Left Eye Close**
+  - Set `Motion` to `Left Eye Close`
+
+#### Transitions
+
+| Source State | Destination State | Conditions |
+| --- | --- | --- |
+| Any State | Eye Tracker Disabled | UseEyeTracker: false |
+| Any State | Left Eye Open | LeftEyeBlink: false, UseEyeTracker: true |
+| Any State | Left Eye Closed | LeftEyeBlink: true, UseEyeTracker: true |
+
 ### Right Eye Blink
 
 ![Animator](docs/layers/layer_righteyeblink.png)
@@ -116,6 +142,23 @@ Create avatar masks `Left Eye` and `Right Eye` using each eye's respective eye b
 | Weight | 1 |
 | Mask | Right Eye |
 | Blending | Override |
+
+#### States
+
+- **Eye Tracker Disabled**
+  - Set `Motion` to `None`
+- **Right Eye Open**
+  - Set `Motion` to `Right Eye Open`
+- **Right Eye Close**
+  - Set `Motion` to `Right Eye Close`
+
+#### Transitions
+
+| Source State | Destination State | Conditions |
+| --- | --- | --- |
+| Any State | Eye Tracker Disabled | UseEyeTracker: false |
+| Any State | Right Eye Open | RightEyeBlink: false, UseEyeTracker: true |
+| Any State | Right Eye Closed | RightEyeBlink: true, UseEyeTracker: true |
 
 ### Left Eye Movement
 
@@ -129,6 +172,36 @@ Create avatar masks `Left Eye` and `Right Eye` using each eye's respective eye b
 | Mask | Left Eye |
 | Blending | Override |
 
+- **Eye Tracker Disabled**
+  - Set `Motion` to `None`
+
+- **Left Eye Movement**
+  - Create as Blend Tree
+  - Set `Blend Type` to `2D Freeform Directional`
+  - Set `Parameters` to `LeftEyeX` and `EyesY`
+  - Add Motions:
+
+| Motion | Pos X | Pos Y |
+| --- | --- | --- |
+| Left Eye Look Up | 0 | 1 |
+| Left Eye Look Down | 0 | -1 |
+| Left Eye Look Left | -1 | 0 |
+| Left Eye Look Right | 1 | 0 |
+| Left Eye Look Forward | 0 | 0 |
+| Left Eye Look Left Up | -1 | 1 |
+| Left Eye Look Right Up | 1 | 1 |
+| Left Eye Look Left Down | -1 | -1 |
+| Left Eye Look Right Down | 1 | -1 |
+
+![Blend Tree](docs/layers/layerstate_lefteyemovement.png)
+
+#### Transitions
+
+| Source State | Destination State | Conditions |
+| --- | --- | --- |
+| Any State | Eye Tracker Disabled | UseEyeTracker: false |
+| Any State | Left Eye Movement | UseEyeTracker: true |
+
 ### Right Eye Movement
 
 ![Animator](docs/layers/layer_righteyemovement.png)
@@ -141,5 +214,32 @@ Create avatar masks `Left Eye` and `Right Eye` using each eye's respective eye b
 | Mask | Right Eye |
 | Blending | Override |
 
+- **Eye Tracker Disabled**
+  - Set `Motion` to `None`
 
+- **Right Eye Movement**
+  - Create as Blend Tree
+  - Set `Blend Type` to `2D Freeform Directional`
+  - Set `Parameters` to `RightEyeX` and `EyesY`
+  - Add Motions:
 
+| Motion | Pos X | Pos Y |
+| --- | --- | --- |
+| Right Eye Look Up | 0 | 1 |
+| Right Eye Look Down | 0 | -1 |
+| Right Eye Look Left | -1 | 0 |
+| Right Eye Look Right | 1 | 0 |
+| Right Eye Look Forward | 0 | 0 |
+| Right Eye Look Left Up | -1 | 1 |
+| Right Eye Look Right Up | 1 | 1 |
+| Right Eye Look Left Down | -1 | -1 |
+| Right Eye Look Right Down | 1 | -1 |
+
+![Blend Tree](docs/layers/layerstate_righteyemovement.png)
+
+#### Transitions
+
+| Source State | Destination State | Conditions |
+| --- | --- | --- |
+| Any State | Eye Tracker Disabled | UseEyeTracker: false |
+| Any State | Right Eye Movement | UseEyeTracker: true |
