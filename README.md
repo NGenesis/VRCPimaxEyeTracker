@@ -62,6 +62,16 @@ The recommended setup that will be used in this guide uses the following express
 
 Create avatar masks `Left Eye` and `Right Eye` using each eye's respective eye bones that will be assigned to the layers below.
 
+## Avatar Constraints
+
+On the left and right eye bones of the avatar:
+- Add a `Rotation Constraint` component
+- Uncheck `Is Active`
+- Set `Weight` to `1`
+- Add a dummy transform to the `Head` bone that matches the respective bone to `Source`
+
+These constraints will be used to reset the eye bone transforms while hardware eye tracking is active.
+
 ## Layers
 
 ### Use Eye Tracker
