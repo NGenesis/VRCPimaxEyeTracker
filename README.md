@@ -224,9 +224,9 @@ All layers should be added to the `FX` animation controller.
 - **Eye Tracker Disabled**
   - Set `Motion` to `None`
 - **Right Eye Open**
-  - Set `Motion` to `Right Eye Open`
+  - Set `Motion` to [`Right Eye Open`](#right-eye-open)
 - **Right Eye Close**
-  - Set `Motion` to `Right Eye Close`
+  - Set `Motion` to [`Right Eye Close`](#right-eye-close)
 
 #### Transitions
 
@@ -259,15 +259,15 @@ All layers should be added to the `FX` animation controller.
 
 | Motion | Pos X | Pos Y |
 | --- | --- | --- |
-| Left Eye Look Up | 0 | 1 |
-| Left Eye Look Down | 0 | -1 |
-| Left Eye Look Left | -1 | 0 |
-| Left Eye Look Right | 1 | 0 |
-| Left Eye Look Forward | 0 | 0 |
-| Left Eye Look Left Up | -1 | 1 |
-| Left Eye Look Right Up | 1 | 1 |
-| Left Eye Look Left Down | -1 | -1 |
-| Left Eye Look Right Down | 1 | -1 |
+| [Left Eye Look Up](#left-eye-look-up) | 0 | 1 |
+| [Left Eye Look Down](#left-eye-look-down) | 0 | -1 |
+| [Left Eye Look Left](#left-eye-look-left) | -1 | 0 |
+| [Left Eye Look Right](#left-eye-look-right) | 1 | 0 |
+| [Left Eye Look Forward](#left-eye-look-forward) | 0 | 0 |
+| [Left Eye Look Left Up](#left-eye-look-left-up) | -1 | 1 |
+| [Left Eye Look Right Up](#left-eye-look-right-up) | 1 | 1 |
+| [Left Eye Look Left Down](#left-eye-look-left-down) | -1 | -1 |
+| [Left Eye Look Right Down](#left-eye-look-right-down) | 1 | -1 |
 
 ![Blend Tree](docs/layers/layerstate_lefteyemovement.png)
 
