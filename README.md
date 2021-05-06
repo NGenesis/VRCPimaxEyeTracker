@@ -157,11 +157,11 @@ All layers should be added to the `FX` animation controller.
     - VRCAnimatorLayerControl - Set `Playable` to `FX`, and set `Layer` to `4`, and set `Goal Weight` to `1`
     - VRCAnimatorLayerControl - Set `Playable` to `FX`, and set `Layer` to `5`, and set `Goal Weight` to `1`
 
-Note that layer numbers may need to be adjusted accordingly so that they correspond with the the following layers:
-- Left Eye Blink (2)
-- Right Eye Blink (3)
-- Left Eye Movement (4)
-- Right Eye Movement (5)
+> :warning: **Note that layer numbers may need to be adjusted accordingly so that they correspond with the the following layers:**
+> - **Left Eye Blink (2)**
+> - **Right Eye Blink (3)**
+> - **Left Eye Movement (4)**
+> - **Right Eye Movement (5)**
 
 #### Transitions
 
