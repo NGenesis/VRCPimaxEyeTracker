@@ -301,15 +301,15 @@ All layers should be added to the `FX` animation controller.
 
 | Motion | Pos X | Pos Y |
 | --- | --- | --- |
-| [Right Eye Look Up](#Right%20Eye%20Look%20Up) | 0 | 1 |
-| Right Eye Look Down | 0 | -1 |
-| Right Eye Look Left | -1 | 0 |
-| Right Eye Look Right | 1 | 0 |
-| Right Eye Look Forward | 0 | 0 |
-| Right Eye Look Left Up | -1 | 1 |
-| Right Eye Look Right Up | 1 | 1 |
-| Right Eye Look Left Down | -1 | -1 |
-| Right Eye Look Right Down | 1 | -1 |
+| [Right Eye Look Up](#right-eye-look-up) | 0 | 1 |
+| [Right Eye Look Down](#right-eye-look-down) | 0 | -1 |
+| [Right Eye Look Left](#right-eye-look-left) | -1 | 0 |
+| [Right Eye Look Right](#right-eye-look-right) | 1 | 0 |
+| [Right Eye Look Forward](#right-eye-look-forward) | 0 | 0 |
+| [Right Eye Look Left Up](#right-eye-look-left-up) | -1 | 1 |
+| [Right Eye Look Right Up](#right-eye-look-right-up) | 1 | 1 |
+| [Right Eye Look Left Down](#right-eye-look-left-down) | -1 | -1 |
+| [Right Eye Look Right Down](#right-eye-look-right-down) | 1 | -1 |
 
 ![Blend Tree](docs/layers/layerstate_righteyemovement.png)
 
