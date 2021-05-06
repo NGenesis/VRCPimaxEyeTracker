@@ -4,10 +4,11 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 - [Installation](#installation)
 - [Avatar Creation](#avatar-creation)
    - [Parameters](#parameters)
+     - [Supported Parameters](#supported-parameters)
+     - [VRC Expression Parameters](#vrc-expression-parameters)
+     - [Animator Parameters](#animator-parameters)
    - [Blend Shapes](#blend-shapes)
    - [Simulated Eye Tracking](#simulated-eye-tracking)
-   - [VRC Expression Parameters](#vrc-expression-parameters)
-   - [Animator Parameters](#animator-parameters)
    - [VRC Expression Menu](#vrc-expression-menu)
    - [Avatar Masks](#avatar-masks)
    - [Avatar Constraints](#avatar-constraints)
@@ -25,6 +26,8 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 # Avatar Creation
 
 ## Parameters
+
+### Supported Parameters
 | Name | Eye | Type | Value | Description |
 | --- | --- | --- | --- | --- |
 | UseEyeTracker | | Bool | True / False | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
@@ -38,6 +41,32 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | RightEyeY | Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
 | EyesX | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
 | EyesY | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+
+### VRC Expression Parameters
+
+The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.  Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
+
+| Name | Type | Default | Saved |
+| --- | --- | --- | --- |
+| UseEyeTracker | Bool | True | True |
+| LeftEyeBlink | Bool | False | False |
+| RightEyeBlink | Bool | False | False |
+| LeftEyeX | Float | 0 | False |
+| RightEyeX | Float | 0 | False |
+| EyesY | Float | 0 | False |
+
+### Animator Parameters
+
+The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.  Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
+
+| Name | Type | Default |
+| --- | --- | --- |
+| UseEyeTracker | Bool | False |
+| LeftEyeBlink | Bool | False |
+| RightEyeBlink | Bool | False |
+| LeftEyeX | Float | 0.0 |
+| RightEyeX | Float | 0.0 |
+| EyesY | Float | 0.0 |
 
 ## Blend Shapes
 | Name | Preview |
@@ -66,28 +95,6 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 ## Simulated Eye Tracking
 
 Simulated eye tracking should be set up as normal in the VRC Avatar Descriptor.  The `Blink` blend shape should be set to `Eyes Blink` and eye bones should be assigned (indicated as `Eye_L` and `Eye_R` in this guide).
-
-## VRC Expression Parameters
-
-| Name | Type | Default | Saved |
-| --- | --- | --- | --- |
-| UseEyeTracker | Bool | True | True |
-| LeftEyeBlink | Bool | False | False |
-| RightEyeBlink | Bool | False | False |
-| LeftEyeX | Float | 0 | False |
-| RightEyeX | Float | 0 | False |
-| EyesY | Float | 0 | False |
-
-## Animator Parameters
-
-| Name | Type | Default |
-| --- | --- | --- |
-| UseEyeTracker | Bool | False |
-| LeftEyeBlink | Bool | False |
-| RightEyeBlink | Bool | False |
-| LeftEyeX | Float | 0.0 |
-| RightEyeX | Float | 0.0 |
-| EyesY | Float | 0.0 |
 
 ## VRC Expression Menu
 
