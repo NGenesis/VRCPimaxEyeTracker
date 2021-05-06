@@ -2,6 +2,8 @@
 
 VRCPimaxEyeTracker is a VRChat plugin supporting VRCSDK3 avatar eye tracking using the 7invensun Droolon Pi1 eye tracker designed for Pimax headsets.
 
+> :warning: **This documentation is a work in progress and may change over time.**
+
 - [Installation](#installation)
 - [Supported Parameters](#supported-parameters)
 - [Avatar Creation](#avatar-creation)
@@ -16,7 +18,7 @@ VRCPimaxEyeTracker is a VRChat plugin supporting VRCSDK3 avatar eye tracking usi
    - [Animations](#animations)
 
 # Installation
-> **:warning: Ensure that the aSeeVR Runtime software is installed (typically installed via PiTool) and running, and that your Droolon Pi1 eye tracker is correctly installed and calibrated using the aSeeVR calibration utility before using this plugin.**
+> :warning: **Ensure that the aSeeVR Runtime software is installed (typically installed via PiTool) and running, and that your Droolon Pi1 eye tracker is correctly installed and calibrated using the aSeeVR calibration utility before using this plugin.**
 
 1. Download and install [MelonLoader](https://melonwiki.xyz/) (requires 0.3.0 or higher).
 1. Download [VRCPimaxEyeTracker](https://github.com/NGenesis/VRCPimaxEyeTracker/releases) and extract the contents of the archive to any location.
