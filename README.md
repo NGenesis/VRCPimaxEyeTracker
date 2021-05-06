@@ -44,7 +44,9 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 
 ### VRC Expression Parameters
 
-The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.  Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
+The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.
+
+Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
 
 | Name | Type | Default | Saved |
 | --- | --- | --- | --- |
@@ -57,7 +59,9 @@ The following parameters will be used in this guide, which will support toggling
 
 ### Animator Parameters
 
-The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.  Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
+The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.
+
+Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
 
 | Name | Type | Default |
 | --- | --- | --- |
