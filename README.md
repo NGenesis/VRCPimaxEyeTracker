@@ -293,6 +293,12 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Eye_L : Rotation Constraint.Active | true |
 | Eye_R : Rotation Constraint.Active | true |
 
+### Left Eye Open
+
+| Property | Value |
+| --- | --- |
+| Body : Skinned Mesh Renderer.Blend Shape.Left Eye Blink | 0 |
+
 ### Left Eye Close
 
 | Property | Value |
@@ -425,11 +431,11 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 100 |
 
-### Left Eye Open
+### Right Eye Open
 
 | Property | Value |
 | --- | --- |
-| Body : Skinned Mesh Renderer.Blend Shape.Left Eye Blink | 0 |
+| Body : Skinned Mesh Renderer.Blend Shape.Right Eye Blink | 0 |
 
 ### Right Eye Close
 
@@ -437,7 +443,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | --- | --- |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Blink | 100 |
 
-### Left Eye Look Down
+### Right Eye Look Down
 
 | Property | Value |
 | --- | --- |
@@ -451,7 +457,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Forward
+### Right Eye Look Forward
 
 | Property | Value |
 | --- | --- |
@@ -465,7 +471,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Left
+### Right Eye Look Left
 
 | Property | Value |
 | --- | --- |
@@ -479,7 +485,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Left Down
+### Right Eye Look Left Down
 
 | Property | Value |
 | --- | --- |
@@ -493,7 +499,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Left Up
+### Right Eye Look Left Up
 
 | Property | Value |
 | --- | --- |
@@ -507,7 +513,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Right
+### Right Eye Look Right
 
 | Property | Value |
 | --- | --- |
@@ -521,7 +527,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Right Down
+### Right Eye Look Right Down
 
 | Property | Value |
 | --- | --- |
@@ -535,7 +541,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Right Up
+### Right Eye Look Right Up
 
 | Property | Value |
 | --- | --- |
@@ -549,7 +555,7 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 100 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Left Eye Look Up
+### Right Eye Look Up
 
 | Property | Value |
 | --- | --- |
@@ -562,9 +568,3 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 100 |
-
-### Right Eye Open
-
-| Property | Value |
-| --- | --- |
-| Body : Skinned Mesh Renderer.Blend Shape.Right Eye Blink | 0 |
