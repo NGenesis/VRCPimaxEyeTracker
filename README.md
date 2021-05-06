@@ -29,6 +29,7 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 ## Blend Shapes
 | Name | Preview |
 | --- | --- |
+| Eyes Blink | ![Eyes Blink](docs/blendshapes/Eyes%20Blink.png) |
 | Right Eye Blink | ![Right Eye Blink](docs/blendshapes/Right%20Eye%20Blink.png) |
 | Left Eye Blink | ![Left Eye Blink](docs/blendshapes/Left%20Eye%20Blink.png) |
 | Eyes Look Forward | ![Eyes Look Forward](docs/blendshapes/Eyes%20Look%20Forward.png) |
@@ -48,6 +49,10 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | Left Eye Look Right Down | ![Left Eye Look Right Down](docs/blendshapes/Left%20Eye%20Look%20Right%20Down.png) |
 | Left Eye Look Down | ![Left Eye Look Down](docs/blendshapes/Left%20Eye%20Look%20Down.png) |
 | Left Eye Look Left Down | ![Left Eye Look Left Down](docs/blendshapes/Left%20Eye%20Look%20Left%20Down.png) |
+
+## Simulated Eye Tracking
+
+Simulated eye tracking should be set up as normal in the VRC Avatar Descriptor.  The `Blink` blend shape should be set to `Eyes Blink` and eye bones should be assigned (indicated as `Eye_L` and `Eye_R` in this guide).
 
 ## VRC Expression Parameters
 
@@ -283,7 +288,6 @@ All layers should be added to the `FX` animation controller.
 
 | Property | Value |
 | --- | --- |
-| VRC Avatar Descriptor.Custom Eye Look Settings.eyelid Type | 2 |
 | Eye_L : Rotation Constraint.Active | false |
 | Eye_R : Rotation Constraint.Active | false |
 
