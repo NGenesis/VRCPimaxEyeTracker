@@ -253,3 +253,297 @@ These constraints will be used to reset the eye bone transforms while hardware e
 | --- | --- | --- |
 | Any State | Eye Tracker Disabled | UseEyeTracker: false |
 | Any State | Right Eye Movement | UseEyeTracker: true |
+
+## Animations
+
+### Disable Eye Tracker
+
+| Property | Value |
+| --- | --- |
+| VRC Avatar Descriptor.Custom Eye Look Settings.eyelid Type | 2 |
+| Eye_L : Rotation Constraint.Active | false |
+| Eye_R : Rotation Constraint.Active | false |
+
+### Enable Eye Tracker
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Blink | 0 |
+| Eye_L : Rotation Constraint.Active | true |
+| Eye_R : Rotation Constraint.Active | true |
+
+### Left Eye Close
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Blink | 100 |
+
+### Left Eye Look Down
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Forward
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Left
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Left Down
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Left Up
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Right
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Right Down
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Right Up
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
+
+### Left Eye Look Up
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 100 |
+
+### Left Eye Open
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Left Eye Blink | 0 |
+
+### Right Eye Close
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Blink | 100 |
+
+### Left Eye Look Down
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Forward
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Left
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Left Down
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Left Up
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Right
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Right Down
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Right Up
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 100 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
+
+### Left Eye Look Up
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 100 |
+
+### Right Eye Open
+
+| Property | Value |
+| --- | --- |
+| Body: Skinned Mesh Renderer.Blend Shape.Right Eye Blink | 0 |
