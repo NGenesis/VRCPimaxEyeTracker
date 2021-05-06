@@ -99,7 +99,7 @@ Add a VRC Expression Menu with a toggle button to start / stop the eye tracker a
 
 ## Avatar Masks
 
-Create avatar masks `Left Eye` and `Right Eye` using each eye's respective eye bones that will be assigned to the layers below.
+Create avatar masks called `Left Eye` and `Right Eye` using each eye's respective eye bones (e.g. `Eye_L` and `Eye_R`) that will be assigned to the layers below.
 
 ## Avatar Constraints
 
