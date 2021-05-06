@@ -29,7 +29,7 @@ VRCPimaxEyeTracker is a VRChat plugin supporting VRCSDK3 avatar eye tracking usi
 
 | Name | Eye | Type | Value&nbsp;/&nbsp;Range | Description |
 | --- | --- | --- | --- | --- |
-| UseEyeTracker | | Bool | False, True | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
+| UseEyeTracker | - | Bool | False, True | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
 | LeftEyeBlink | Left | Bool | False, True | Returns true when the user's left eye is closed. |
 | RightEyeBlink | Right | Bool | False, True | Returns true when the user's right eye is closed. |
 | LeftEyeLid | Left | Float | 0.0 ~ 1.0 | Returns 0.0 when the user's left eye is fully closed and 1.0 when fully open. |
