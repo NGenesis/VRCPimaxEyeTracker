@@ -4,14 +4,13 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 - [Installation](#installation)
 - [Supported Parameters](#supported-parameters)
 - [Avatar Creation](#avatar-creation)
-   - [Parameters](#parameters)
-     - [VRC Expression Parameters](#vrc-expression-parameters)
-     - [Animator Parameters](#animator-parameters)
    - [Blend Shapes](#blend-shapes)
+   - [Expression Parameters](#expression-parameters)
+   - [Expression Menu](#expression-menu)
    - [Simulated Eye Tracking](#simulated-eye-tracking)
-   - [VRC Expression Menu](#vrc-expression-menu)
-   - [Avatar Masks](#avatar-masks)
    - [Avatar Constraints](#avatar-constraints)
+   - [Avatar Masks](#avatar-masks)
+   - [Animator Parameters](#animator-parameters)
    - [Layers](#layers)
    - [Animations](#animations)
 
@@ -41,38 +40,6 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 
 # Avatar Creation
 
-## Parameters
-
-### VRC Expression Parameters
-
-The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.
-
-Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
-
-| Name | Type | Default | Saved |
-| --- | --- | --- | --- |
-| UseEyeTracker | Bool | True | True |
-| LeftEyeBlink | Bool | False | False |
-| RightEyeBlink | Bool | False | False |
-| LeftEyeX | Float | 0 | False |
-| RightEyeX | Float | 0 | False |
-| EyesY | Float | 0 | False |
-
-### Animator Parameters
-
-The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.
-
-Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
-
-| Name | Type | Default |
-| --- | --- | --- |
-| UseEyeTracker | Bool | False |
-| LeftEyeBlink | Bool | False |
-| RightEyeBlink | Bool | False |
-| LeftEyeX | Float | 0.0 |
-| RightEyeX | Float | 0.0 |
-| EyesY | Float | 0.0 |
-
 ## Blend Shapes
 | Name | Preview |
 | --- | --- |
@@ -97,11 +64,22 @@ Please refer to [Support Parameters](#supported-parameters) for a complete list 
 | Left Eye Look Down | ![Left Eye Look Down](docs/blendshapes/Left%20Eye%20Look%20Down.png) |
 | Left Eye Look Left Down | ![Left Eye Look Left Down](docs/blendshapes/Left%20Eye%20Look%20Left%20Down.png) |
 
-## Simulated Eye Tracking
+## Expression Parameters
 
-Simulated eye tracking should be set up as normal in the VRC Avatar Descriptor.  The `Blink` blend shape should be set to `Eyes Blink` and eye bones should be assigned (indicated as `Eye_L` and `Eye_R` in this guide).
+The following parameters will be used in this guide, which will support toggling between hardware and simulated eye tracking, independent eye blinking, independent horizontal left/right eye movement and combined vertical left/right movement for optimization.
 
-## VRC Expression Menu
+Please refer to [Support Parameters](#supported-parameters) for a complete list of available parameters.
+
+| Name | Type | Default | Saved |
+| --- | --- | --- | --- |
+| UseEyeTracker | Bool | True | True |
+| LeftEyeBlink | Bool | False | False |
+| RightEyeBlink | Bool | False | False |
+| LeftEyeX | Float | 0 | False |
+| RightEyeX | Float | 0 | False |
+| EyesY | Float | 0 | False |
+
+## Expression Menu
 
 Add a VRC Expression Menu with a toggle button to start / stop the eye tracker and switch between hardware or default simulated eye tracking.
 
@@ -109,9 +87,9 @@ Add a VRC Expression Menu with a toggle button to start / stop the eye tracker a
 | --- | --- | --- |
 | Eye Tracker | Toggle | UseEyeTracker |
 
-## Avatar Masks
+## Simulated Eye Tracking
 
-Create avatar masks called `Left Eye` and `Right Eye` using each eye's respective eye bones (e.g. `Eye_L` and `Eye_R`) that will be assigned to the layers below.
+Simulated eye tracking should be set up as normal in the VRC Avatar Descriptor.  The `Blink` blend shape should be set to `Eyes Blink` and eye bones should be assigned (indicated as `Eye_L` and `Eye_R` in this guide).
 
 ## Avatar Constraints
 
@@ -128,6 +106,21 @@ These constraints will be used to reset the eye bone transforms while hardware e
     - Uncheck `Is Active`
     - Set `Weight` to `1`
     - Add the dummy object (e.g. `Eye_R_EyeTrackingDisabled`) to `Source` with a weight of `1`
+
+## Avatar Masks
+
+Create avatar masks called `Left Eye` and `Right Eye` using each eye's respective eye bones (e.g. `Eye_L` and `Eye_R`) that will be assigned to the layers below.
+
+## Animator Parameters
+
+| Name | Type | Default |
+| --- | --- | --- |
+| UseEyeTracker | Bool | False |
+| LeftEyeBlink | Bool | False |
+| RightEyeBlink | Bool | False |
+| LeftEyeX | Float | 0.0 |
+| RightEyeX | Float | 0.0 |
+| EyesY | Float | 0.0 |
 
 ## Layers
 
