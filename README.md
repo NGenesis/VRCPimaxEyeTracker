@@ -103,17 +103,17 @@ Simulated eye tracking should be set up as normal in the VRC Avatar Descriptor. 
 
 These constraints will be used to reset the eye bone transforms while hardware eye tracking is active.
 
-- Create a dummy object for each eye bone (e.g. `Eye_L_EyeTrackingDisabled` and `Eye_R_EyeTrackingDisabled`) that has the same transform as the original respective eye bone (e.g. `Eye_L` and `Eye_R`) under the `Head` bone.
+- Create a dummy object for each eye bone (e.g. `Eye_L_EyeTrackerDisabled` and `Eye_R_EyeTrackerDisabled`) that has the same transform as the original respective eye bone (e.g. `Eye_L` and `Eye_R`) under the `Head` bone.
 - On the left eye bone (e.g. `Eye_L`):
   - Add a `Rotation Constraint` component to each original bone
     - Uncheck `Is Active`
     - Set `Weight` to `1`
-    - Add the dummy object (e.g. `Eye_L_EyeTrackingDisabled`) to `Source` with a weight of `1`
+    - Add the dummy object (e.g. `Eye_L_EyeTrackerDisabled`) to `Source` with a weight of `1`
 - On the right eye bone (e.g. `Eye_R`):
   - Add a `Rotation Constraint` component to each original bone
     - Uncheck `Is Active`
     - Set `Weight` to `1`
-    - Add the dummy object (e.g. `Eye_R_EyeTrackingDisabled`) to `Source` with a weight of `1`
+    - Add the dummy object (e.g. `Eye_R_EyeTrackerDisabled`) to `Source` with a weight of `1`
 
 ## Avatar Masks
 
