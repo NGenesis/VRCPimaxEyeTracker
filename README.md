@@ -73,7 +73,7 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 
 ## Expression Menu
 
-Add a VRC Expression Menu with a toggle button to start and start and stop the eye tracker and switch between hardware or simulated eye tracking.
+Add a VRC Expression Menu with a toggle button to start / stop the eye tracker and switch between hardware or default simulated eye tracking.
 
 | Name | Type | Parameter |
 | --- | --- | --- |
