@@ -349,12 +349,12 @@ All layers should be added to the `FX` animation controller.
 | --- | --- |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Blink | 100 |
 
-### Left Eye Look Down
+### Left Eye Look Forward
 
 | Property | Value |
 | --- | --- |
-| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
-| Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 100 |
+| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 100 |
+| Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
@@ -363,12 +363,12 @@ All layers should be added to the `FX` animation controller.
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Up | 0 |
 
-### Left Eye Look Forward
+### Left Eye Look Down
 
 | Property | Value |
 | --- | --- |
-| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 100 |
-| Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 0 |
+| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Down | 100 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Left | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Left Eye Look Left Up | 0 |
@@ -487,12 +487,12 @@ All layers should be added to the `FX` animation controller.
 | --- | --- |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Blink | 100 |
 
-### Right Eye Look Down
+### Right Eye Look Forward
 
 | Property | Value |
 | --- | --- |
-| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
-| Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 100 |
+| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 100 |
+| Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
@@ -501,12 +501,12 @@ All layers should be added to the `FX` animation controller.
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 0 |
 
-### Right Eye Look Forward
+### Right Eye Look Down
 
 | Property | Value |
 | --- | --- |
-| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 100 |
-| Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 0 |
+| Body : Skinned Mesh Renderer.Blend Shape.Eyes Look Forward | 0 |
+| Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Down | 100 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Left | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Left Up | 0 |
