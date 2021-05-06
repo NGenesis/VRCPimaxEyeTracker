@@ -148,7 +148,7 @@ All layers should be added to the `FX` animation controller.
 #### States
 
 - **Eye Tracker Disabled**
-  - Set `Motion` to `Disable Eye Tracker`
+  - Set `Motion` to [`Disable Eye Tracker`](#disable-eye-tracker)
   - Add Behaviours:
     - VRCAnimatorTrackingControl - Set `Eyes & Eyelids` to `Tracking`
     - VRCAnimatorLayerControl - Set `Playable` to `FX`, set `Layer` to `2`, and set `Goal Weight` to `0`
@@ -157,7 +157,7 @@ All layers should be added to the `FX` animation controller.
     - VRCAnimatorLayerControl - Set `Playable` to `FX`, set `Layer` to `5`, and set `Goal Weight` to `0`
 
 - **Eye Tracker Enabled**
-  - Set `Motion` to `Enable Eye Tracker`
+  - Set `Motion` to [`Enable Eye Tracker`](#enable-eye-tracker)
   - Add Behaviours:
     - VRCAnimatorTrackingControl - Set `Eyes & Eyelids` to `Animation`
     - VRCAnimatorLayerControl - Set `Playable` to `FX`, and set `Layer` to `2`, and set `Goal Weight` to `1`
@@ -166,10 +166,10 @@ All layers should be added to the `FX` animation controller.
     - VRCAnimatorLayerControl - Set `Playable` to `FX`, and set `Layer` to `5`, and set `Goal Weight` to `1`
 
 > :warning: **Note that layer numbers may need to be adjusted accordingly so that they correspond with the the following layers:**
-> - **Left Eye Blink (2)**
-> - **Right Eye Blink (3)**
-> - **Left Eye Movement (4)**
-> - **Right Eye Movement (5)**
+> - **[Left Eye Blink](#left-eye-blink) (2)**
+> - **[Right Eye Blink](#right-eye-blink) (3)**
+> - **[Left Eye Movement](#left-eye-movement) (4)**
+> - **[Right Eye Movement](#right-eyemovement) (5)**
 
 #### Transitions
 
@@ -195,9 +195,9 @@ All layers should be added to the `FX` animation controller.
 - **Eye Tracker Disabled**
   - Set `Motion` to `None`
 - **Left Eye Open**
-  - Set `Motion` to `Left Eye Open`
+  - Set `Motion` to [`Left Eye Open`](#left-eye-open)
 - **Left Eye Close**
-  - Set `Motion` to `Left Eye Close`
+  - Set `Motion` to [`Left Eye Close`](#left-eye-close)
 
 #### Transitions
 
