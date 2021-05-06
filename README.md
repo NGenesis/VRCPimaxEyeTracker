@@ -301,7 +301,7 @@ All layers should be added to the `FX` animation controller.
 
 | Motion | Pos X | Pos Y |
 | --- | --- | --- |
-| Right Eye Look Up | 0 | 1 |
+| [Right Eye Look Up](#Right%20Eye%20Look%20Up) | 0 | 1 |
 | Right Eye Look Down | 0 | -1 |
 | Right Eye Look Left | -1 | 0 |
 | Right Eye Look Right | 1 | 0 |
