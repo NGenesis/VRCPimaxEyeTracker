@@ -2,9 +2,9 @@
 VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for Pimax headsets.
 
 - [Installation](#installation)
+- [Supported Parameters](#supported-parameters)
 - [Avatar Creation](#avatar-creation)
    - [Parameters](#parameters)
-     - [Supported Parameters](#supported-parameters)
      - [VRC Expression Parameters](#vrc-expression-parameters)
      - [Animator Parameters](#animator-parameters)
    - [Blend Shapes](#blend-shapes)
@@ -23,11 +23,8 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 1. Copy `PimaxEyeTrackerNative.dll` and `aSeeVRClient.dll` to your VRChat installation folder, in the same location where `VRChat.exe` is located.
 1. Copy `VRCPimaxEyeTracker.dll`to your Mods folder.
 
-# Avatar Creation
+# Supported Parameters
 
-## Parameters
-
-### Supported Parameters
 | Name | Eye | Type | Value&nbsp;/&nbsp;Range | Description |
 | --- | --- | --- | --- | --- |
 | UseEyeTracker | | Bool | False, True | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
@@ -41,6 +38,10 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | RightEyeY | Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
 | EyesX | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
 | EyesY | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+
+# Avatar Creation
+
+## Parameters
 
 ### VRC Expression Parameters
 
