@@ -114,13 +114,19 @@ Create avatar masks called `Left Eye` and `Right Eye` using each eye's respectiv
 
 ## Avatar Constraints
 
-On the left and right eye bones of the avatar:
-- Add a `Rotation Constraint` component
-- Uncheck `Is Active`
-- Set `Weight` to `1`
-- Add a dummy transform to the `Head` bone that matches the respective bone to `Source`
-
 These constraints will be used to reset the eye bone transforms while hardware eye tracking is active.
+
+- Create a dummy object for each eye bone (e.g. `Eye_L_EyeTrackingDisabled` and `Eye_R_EyeTrackingDisabled`) that has the same transform as the original respective eye bone (e.g. `Eye_L` and `Eye_R`) under the `Head` bone.
+- On the left eye bone (e.g. `Eye_L`):
+  - Add a `Rotation Constraint` component to each original bone
+    - Uncheck `Is Active`
+    - Set `Weight` to `1`
+    - Add the dummy object (e.g. `Eye_L_EyeTrackingDisabled`) to `Source` with a weight of `1`
+- On the right eye bone (e.g. `Eye_R`):
+  - Add a `Rotation Constraint` component to each original bone
+    - Uncheck `Is Active`
+    - Set `Weight` to `1`
+    - Add the dummy object (e.g. `Eye_R_EyeTrackingDisabled`) to `Source` with a weight of `1`
 
 ## Layers
 
