@@ -17,23 +17,14 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | UseEyeTracker | | Bool | True / False | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
 | LeftEyeBlink | Left | Bool | True / False | Returns true when the user's left eye is closed. |
 | RightEyeBlink | Right | Bool | True / False | Returns true when the user's right eye is closed. |
-| LeftEyeLid | Left | Float | 0.0 ~ 1.0 | Returns 0.0 when the user's left eye is fully closed and 1.0 when fully open. |
-| RightEyeLid | Right | Float | 0.0 ~ 1.0 | Returns 0.0 when the user's right eye is fully closed and 1.0 when fully open. |
-| LeftEyeX | Left | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
-| RightEyeX | Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
-| LeftEyeY | Left | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
-| RightEyeY | Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
-| EyesX | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
-| EyesY | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
-
-The recommended setup that will be used in this guide uses the following parameters:
-
-- UseEyeTracker
-- LeftEyeBlink
-- RightEyeBlink
-- LeftEyeX
-- RightEyeX
-- EyesY
+| LeftEyeLid | Left | Float | 0 ~ 1 | Returns 0.0 when the user's left eye is fully closed and 1.0 when fully open. |
+| RightEyeLid | Right | Float | 0 ~ 1 | Returns 0.0 when the user's right eye is fully closed and 1.0 when fully open. |
+| LeftEyeX | Left | Float | -1 ~ 1 | Returns -1.0 when the user's left eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
+| RightEyeX | Right | Float | -1 ~ 1 | Returns -1.0 when the user's right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
+| LeftEyeY | Left | Float | -1 ~ 1 | Returns -1.0 when the user's left eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+| RightEyeY | Right | Float | -1 ~ 1 | Returns -1.0 when the user's right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+| EyesX | Left / Right | Float | -1 ~ 1 | Returns -1.0 when the user's left or right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
+| EyesY | Left / Right | Float | -1 ~ 1 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
 
 ## Blend Shapes
 | Name | Preview |
@@ -57,6 +48,36 @@ The recommended setup that will be used in this guide uses the following paramet
 | Left Eye Look Right Down | ![Left Eye Look Right Down](docs/blendshapes/Left%20Eye%20Look%20Right%20Down.png) |
 | Left Eye Look Down | ![Left Eye Look Down](docs/blendshapes/Left%20Eye%20Look%20Down.png) |
 | Left Eye Look Left Down | ![Left Eye Look Left Down](docs/blendshapes/Left%20Eye%20Look%20Left%20Down.png) |
+
+## VRC Expression Parameters
+
+| Name | Type | Default | Saved |
+| --- | --- | --- | --- |
+| UseEyeTracker | Bool | True | True |
+| LeftEyeBlink | Bool | False | False |
+| RightEyeBlink | Bool | False | False |
+| LeftEyeX | Float | 0 | False |
+| RightEyeX | Float | 0 | False |
+| EyesY | Float | 0 | False |
+
+## Animator Parameters
+
+| Name | Type | Default |
+| --- | --- | --- |
+| UseEyeTracker | Bool | False |
+| LeftEyeBlink | Bool | False |
+| RightEyeBlink | Bool | False |
+| LeftEyeX | Float | 0.0 |
+| RightEyeX | Float | 0.0 |
+| EyesY | Float | 0.0 |
+
+## Expression Menu
+
+Add a VRC Expression Menu with a toggle button to start and start and stop the eye tracker and switch between hardware or simulated eye tracking.
+
+| Name | Type | Parameter |
+| --- | --- | --- |
+| Eye Tracker | Toggle | UseEyeTracker |
 
 ## Avatar Masks
 
