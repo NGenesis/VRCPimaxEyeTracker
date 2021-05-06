@@ -17,14 +17,14 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 | UseEyeTracker | | Bool | True / False | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
 | LeftEyeBlink | Left | Bool | True / False | Returns true when the user's left eye is closed. |
 | RightEyeBlink | Right | Bool | True / False | Returns true when the user's right eye is closed. |
-| LeftEyeLid | Left | Float | 0 ~ 1 | Returns 0.0 when the user's left eye is fully closed and 1.0 when fully open. |
-| RightEyeLid | Right | Float | 0 ~ 1 | Returns 0.0 when the user's right eye is fully closed and 1.0 when fully open. |
-| LeftEyeX | Left | Float | -1 ~ 1 | Returns -1.0 when the user's left eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
-| RightEyeX | Right | Float | -1 ~ 1 | Returns -1.0 when the user's right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
-| LeftEyeY | Left | Float | -1 ~ 1 | Returns -1.0 when the user's left eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
-| RightEyeY | Right | Float | -1 ~ 1 | Returns -1.0 when the user's right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
-| EyesX | Left / Right | Float | -1 ~ 1 | Returns -1.0 when the user's left or right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
-| EyesY | Left / Right | Float | -1 ~ 1 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+| LeftEyeLid | Left | Float | 0.0 ~ 1.0 | Returns 0.0 when the user's left eye is fully closed and 1.0 when fully open. |
+| RightEyeLid | Right | Float | 0.0 ~ 1.0 | Returns 0.0 when the user's right eye is fully closed and 1.0 when fully open. |
+| LeftEyeX | Left | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
+| RightEyeX | Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
+| LeftEyeY | Left | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+| RightEyeY | Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
+| EyesX | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
+| EyesY | Left / Right | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left or right eye is looking down, 0.0 when looking forward and 1.0 when looking up. |
 
 ## Blend Shapes
 | Name | Preview |
@@ -94,6 +94,8 @@ On the left and right eye bones of the avatar:
 These constraints will be used to reset the eye bone transforms while hardware eye tracking is active.
 
 ## Layers
+
+All layers should be added to the `FX` animation controller.
 
 ### Use Eye Tracker
 
