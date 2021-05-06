@@ -1,6 +1,19 @@
 # VRCPimaxEyeTracker
 VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for Pimax headsets.
 
+- [Installation](#installation)
+- [Avatar Creation](#avatar-creation)
+   - [Parameters](#parameters)
+   - [Blend Shapes](#blend-shapes)
+   - [Simulated Eye Tracking](#simulated-eye-tracking)
+   - [VRC Expression Parameters](#vrc-expression-parameters)
+   - [Animator Parameters](#animator-parameters)
+   - [VRC Expression Menu](#vrc-expression-menu)
+   - [Avatar Masks](#avatar-masks)
+   - [Avatar Constraints](#avatar-constraints)
+   - [Layers](#layers)
+   - [Animations](#animations)
+
 # Installation
 > **:warning: Ensure that aSeeVR Runtime (typically installed via PiTool) is installed and running, and that your Droolon Pi1 is correctly installed and calibrated before using the plugin.**
 
@@ -11,7 +24,7 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 
 # Avatar Creation
 
-## Expression / Animator Parameters
+## Parameters
 | Name | Eye | Type | Value | Description |
 | --- | --- | --- | --- | --- |
 | UseEyeTracker | | Bool | True / False | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
