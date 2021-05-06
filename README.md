@@ -21,7 +21,7 @@ VRCPimaxEyeTracker is a VRChat plugin supporting VRCSDK3 avatar eye tracking usi
 
 > :warning: **USE THIS PLUGIN AT YOUR OWN RISK!**
 > 
-> **Modifying the VRChat client is a breach of VRChat's Terms of Service and can result in temporary or permanent account suspension. Any contributers of this plugin will not be held responsible for banned accounts, privacy breaches, etc.**
+> **Modifying the VRChat client is a breach of VRChat's Terms of Service and can result in temporary or permanent account suspension. Any authors or contributers of this plugin will not be held responsible for banned accounts, privacy breaches, etc.**
 
 > :warning: **Ensure that the aSeeVR Runtime software is installed (typically installed via PiTool) and running, and that your Droolon Pi1 eye tracker is correctly installed and calibrated using the aSeeVR calibration utility before using this plugin.**
 
