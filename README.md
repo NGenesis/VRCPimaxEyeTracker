@@ -28,11 +28,11 @@ VRChat plugin supports avatar eye tracking using the Droolon Pi1 eye tracker for
 ## Parameters
 
 ### Supported Parameters
-| Name | Eye | Type | Value | Description |
+| Name | Eye | Type | Value&nbsp;/&nbsp;Range | Description |
 | --- | --- | --- | --- | --- |
-| UseEyeTracker | | Bool | True / False | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
-| LeftEyeBlink | Left | Bool | True / False | Returns true when the user's left eye is closed. |
-| RightEyeBlink | Right | Bool | True / False | Returns true when the user's right eye is closed. |
+| UseEyeTracker | | Bool | False, True | When set to true by the user via the quick menu or an animator, hardware eye tracking will be enabled. |
+| LeftEyeBlink | Left | Bool | False, True | Returns true when the user's left eye is closed. |
+| RightEyeBlink | Right | Bool | False, True | Returns true when the user's right eye is closed. |
 | LeftEyeLid | Left | Float | 0.0 ~ 1.0 | Returns 0.0 when the user's left eye is fully closed and 1.0 when fully open. |
 | RightEyeLid | Right | Float | 0.0 ~ 1.0 | Returns 0.0 when the user's right eye is fully closed and 1.0 when fully open. |
 | LeftEyeX | Left | Float | -1.0 ~ 1.0 | Returns -1.0 when the user's left eye is looking to the left, 0.0 when looking forward and 1.0 when looking to the right. |
