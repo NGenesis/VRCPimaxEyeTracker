@@ -120,14 +120,14 @@ namespace Pimax.EyeTracking {
 	public delegate void EyeTrackerEventHandler();
 
 	public class EyeTracker {
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "RegisterCallback")] private static extern void _RegisterCallback(CallbackType type, EyeTrackerEventHandler callback);
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "Start")] private static extern void _Start();
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "Stop")] private static extern void _Stop();
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "IsActive")] private static extern bool _IsActive();
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "GetTimestamp")] private static extern System.Int64 _GetTimestamp();
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "GetRecommendedEye")] private static extern Eye _GetRecommendedEye();
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "GetEyeParameter")] private static extern float _GetEyeParameter(Eye eye, EyeParameter param);
-		[DllImport("PimaxEyeTrackerNative", EntryPoint = "GetEyeExpression")] private static extern float _GetEyeExpression(Eye eye, EyeExpression expression);
+		[DllImport("PimaxEyeTracker", EntryPoint = "RegisterCallback")] private static extern void _RegisterCallback(CallbackType type, EyeTrackerEventHandler callback);
+		[DllImport("PimaxEyeTracker", EntryPoint = "Start")] private static extern bool _Start();
+		[DllImport("PimaxEyeTracker", EntryPoint = "Stop")] private static extern void _Stop();
+		[DllImport("PimaxEyeTracker", EntryPoint = "IsActive")] private static extern bool _IsActive();
+		[DllImport("PimaxEyeTracker", EntryPoint = "GetTimestamp")] private static extern System.Int64 _GetTimestamp();
+		[DllImport("PimaxEyeTracker", EntryPoint = "GetRecommendedEye")] private static extern Eye _GetRecommendedEye();
+		[DllImport("PimaxEyeTracker", EntryPoint = "GetEyeParameter")] private static extern float _GetEyeParameter(Eye eye, EyeParameter param);
+		[DllImport("PimaxEyeTracker", EntryPoint = "GetEyeExpression")] private static extern float _GetEyeExpression(Eye eye, EyeExpression expression);
 
 		public EyeTrackerEventHandler OnStart { get; set; }
 		private EyeTrackerEventHandler _OnStartHandler = null;
@@ -147,7 +147,7 @@ namespace Pimax.EyeTracking {
 
 		public bool Active => _IsActive();
 
-		public void Start() {
+		public bool Start() {
 			_OnStartHandler = _OnStart;
 			_RegisterCallback(CallbackType.Start, _OnStartHandler);
 
@@ -157,7 +157,7 @@ namespace Pimax.EyeTracking {
 			_OnUpdateHandler = _OnUpdate;
 			_RegisterCallback(CallbackType.Update, _OnUpdateHandler);
 
-			_Start();
+			return _Start();
 		}
 
 		public void Stop() => _Stop();
@@ -170,17 +170,12 @@ namespace Pimax.EyeTracking {
 				LeftEye = new EyeState(Eye.Left, this);
                 RightEye = new EyeState(Eye.Right, this);
                 RecommendedEye = new EyeState(_GetRecommendedEye(), this);
-                if(OnUpdate != null) OnUpdate();
+                OnUpdate?.Invoke();
 			}
 		}
 
-		private void _OnStart() {
-			if(OnStart != null) OnStart();
-		}
-
-		private void _OnStop() {
-			if(OnStop != null) OnStop();
-		}
+		private void _OnStart() => OnStart?.Invoke();
+		private void _OnStop() => OnStop?.Invoke();
 	}
 
 	public class PimaxEyeTracker : MonoBehaviour {

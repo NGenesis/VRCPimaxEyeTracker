@@ -18,7 +18,7 @@ namespace VRCPimaxEyeTracker
         [DllImport("kernel32", SetLastError = true, CharSet = CharSet.Unicode)]
         private static extern IntPtr LoadLibrary(string lpFileName);
 
-        public static bool Init() => LoadDLL("VRCPimaxEyeTracker.PimaxEyeTracker", "PimaxEyeTrackerNative.dll");
+        public static bool Init() => LoadDLL("VRCPimaxEyeTracker.PimaxEyeTracker", "PimaxEyeTracker.dll");
 
         private static bool LoadDLL(string resourcePath, string dllName)
         {
@@ -123,6 +123,9 @@ namespace VRCPimaxEyeTracker
         private static Pimax.EyeTracking.EyeTracker eyeTracker;
         private static bool isChangingActiveStatus = false;
         private static bool needsExpressionUpdate = false;
+        private static DateTime changeActiveStateTimer;
+
+        private const float TIMER_CHANGE_ACTIVE_STATE = 3.0f;
 
         public override void OnApplicationStart()
         {
@@ -198,13 +201,23 @@ namespace VRCPimaxEyeTracker
                     {
                         MelonLogger.Msg("Eye Tracker Stopping");
                         isChangingActiveStatus = true;
+                        changeActiveStateTimer = DateTime.Now;
                         eyeTracker.Stop();
                     }
                     else if (!isEyeTrackerActive && useEyeTracker)
                     {
                         MelonLogger.Msg("Eye Tracker Starting");
-                        isChangingActiveStatus = true;
-                        eyeTracker.Start();
+                        isChangingActiveStatus = eyeTracker.Start();
+                        changeActiveStateTimer = DateTime.Now;
+                    }
+                }
+                else
+                {
+                    if ((DateTime.Now - changeActiveStateTimer).TotalSeconds >= TIMER_CHANGE_ACTIVE_STATE)
+                    {
+                        MelonLogger.Msg("Eye Tracker State Change Timed Out");
+                        isChangingActiveStatus = false;
+                        ExpressionParameterManager.SetParameter("UseEyeTracker", isEyeTrackerActive, true);
                     }
                 }
 

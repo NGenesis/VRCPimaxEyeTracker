@@ -124,14 +124,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PimaxEyeTracker\PimaxEyeTrackerNative.dll" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <EmbeddedResource Include="PimaxEyeTracker\PimaxEyeTracker.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)$(TargetName)$(TargetExt)" "F:\Steam\steamapps\common\VRChat\Mods" /Y</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetPath)" "F:\Steam\steamapps\common\VRChat\Mods" /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
