@@ -16,6 +16,7 @@ VRCPimaxEyeTracker is a VRChat plugin supporting VRCSDK3 avatar eye tracking usi
    - [Animator Parameters](#animator-parameters)
    - [Layers](#layers)
    - [Animations](#animations)
+- [Related Projects](#related-projects)
 
 # Installation
 
@@ -611,3 +612,6 @@ All layers should be added to the `FX` animation controller.
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Down | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Right Up | 0 |
 | Body : Skinned Mesh Renderer.Blend Shape.Right Eye Look Up | 100 |
+
+# Related Projects
+- [PimaxEyeTracker](https://github.com/NGenesis/PimaxEyeTracker) - A utility library with language bindings for aSeeVR UserSDK, to use with the 7invensun Droolon Pi1 eye tracker designed for Pimax headsets.
