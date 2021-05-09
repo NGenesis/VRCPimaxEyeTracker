@@ -27,7 +27,7 @@ VRCPimaxEyeTracker is a VRChat plugin supporting VRCSDK3 avatar eye tracking usi
 
 1. Download and install [MelonLoader](https://melonwiki.xyz/) (requires 0.3.0 or higher).
 1. Download [VRCPimaxEyeTracker](https://github.com/NGenesis/VRCPimaxEyeTracker/releases).
-1. Copy `VRCPimaxEyeTracker.dll`to the `Mods` folder located in your VRChat installation folder.
+1. Copy `VRCPimaxEyeTracker.dll` to the `Mods` folder located in your VRChat installation folder.
 
 # Supported Parameters
 
