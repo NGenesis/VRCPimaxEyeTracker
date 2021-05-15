@@ -186,7 +186,7 @@ All layers should be added to the `FX` animation controller.
 
 | Property | Value |
 | --- | --- |
-| Weight | 1 |
+| Weight | 0 |
 | Mask | Left Eye |
 | Blending | Override |
 
@@ -215,7 +215,7 @@ All layers should be added to the `FX` animation controller.
 
 | Property | Value |
 | --- | --- |
-| Weight | 1 |
+| Weight | 0 |
 | Mask | Right Eye |
 | Blending | Override |
 
@@ -244,7 +244,7 @@ All layers should be added to the `FX` animation controller.
 
 | Property | Value |
 | --- | --- |
-| Weight | 1 |
+| Weight | 0 |
 | Mask | Left Eye |
 | Blending | Override |
 
@@ -286,7 +286,7 @@ All layers should be added to the `FX` animation controller.
 
 | Property | Value |
 | --- | --- |
-| Weight | 1 |
+| Weight | 0 |
 | Mask | Right Eye |
 | Blending | Override |
 
